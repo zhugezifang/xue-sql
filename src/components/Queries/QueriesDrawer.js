@@ -50,7 +50,7 @@ const QueriesDrawer = ({ usePredefinedQuery, displayText, setValue }) => {
         <DrawerOverlay />
         <DrawerContent bgColor="teal">
           <DrawerCloseButton />
-          <DrawerHeader>所有表</DrawerHeader>
+          <DrawerHeader color="white">所有表</DrawerHeader>
 
           <DrawerBody>
             <Stack direction="column" spacing={4}>
@@ -76,6 +76,7 @@ const QueriesDrawer = ({ usePredefinedQuery, displayText, setValue }) => {
                         key={key}
                         bgColor={"blackAlpha.300"}
                         fontWeight="bold"
+                        color="white"
                         pb={2}
                         cursor={"pointer"}
                         _hover={{ bg: "blackAlpha.100" }}
