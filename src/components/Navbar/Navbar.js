@@ -21,9 +21,9 @@ function Navbar({ usePredefinedQuery, setValue }) {
       <Heading> SQL自学网</Heading>
       <IconButton
         as={"a"}
-        href="https://github.com/janvi01/sql-editor"
+        href="https://www.zgzf.online"
         target="_blank"
-        aria-label="Github Link"
+        aria-label="about"
         icon={<VscAccount />}
       />
     </HStack>
