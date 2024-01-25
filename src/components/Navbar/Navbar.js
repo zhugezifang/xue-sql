@@ -1,7 +1,9 @@
 import { HStack, Heading, IconButton } from "@chakra-ui/react";
 import React from "react";
 import QueriesDrawer from "../Queries/QueriesDrawer";
-import { BsGithub } from "react-icons/bs";
+import { VscAccount } from "react-icons/vsc";
+
+ 
 
 function Navbar({ usePredefinedQuery, setValue }) {
   return (
@@ -19,9 +21,10 @@ function Navbar({ usePredefinedQuery, setValue }) {
       <Heading> SQL自学网</Heading>
       <IconButton
         as={"a"}
-        href="https://zgzf.online/about"
+        href="https://github.com/janvi01/sql-editor"
         target="_blank"
-        aria-label="blog link"
+        aria-label="Github Link"
+        icon={<VscAccount />}
       />
     </HStack>
   );
