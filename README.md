@@ -8,7 +8,7 @@
 
 <p align="center">
 <a href="https://sql-editor-online.vercel.app/" target="_blank" style="font-size:50px">
-<img src="/public/favicon.png" alt="SQL-editor" width="125" /></a>
+<img src="/public/sql.png" alt="SQL-editor" width="125" /></a>
 </p>
 
 <h4 align="center">"Craft SQL queries effortlessly in our intuitive online editor."</h4>
