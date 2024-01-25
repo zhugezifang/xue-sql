@@ -137,9 +137,9 @@ const OutputDisplay = ({ submittedQuery, loading, setLoading }) => {
             maxH="300px"
           />
           <Heading as="h1" fontSize="xl" mt={4}>
-            Nothing to show at the moment
+            没有查询结果
           </Heading>
-          <Text>Run a query first to see resulting table</Text>
+          <Text>执行查询SQL查看结果</Text>
         </VStack>
       )}
     </>
