@@ -70,7 +70,7 @@ function QueryHistory({ history, setQuery, setValue, setHistory }) {
           ))}
         </List>
       ) : (
-        "Execute a query first"
+        "没有查询历史"
       )}
     </Box>
   );
