@@ -33,13 +33,13 @@ const QueriesDrawer = ({ usePredefinedQuery, displayText, setValue }) => {
   return (
     <>
       <Button
-        aria-label="Available Tables"
+        aria-label="所有表"
         leftIcon={<AiOutlineBars />}
         ref={btnRef}
         colorScheme="teal"
         onClick={onOpen}
       >
-        {displayText ? "Available Tables" : ""}
+        {displayText ? "所有表" : ""}
       </Button>
       <Drawer
         isOpen={isOpen}
@@ -50,7 +50,7 @@ const QueriesDrawer = ({ usePredefinedQuery, displayText, setValue }) => {
         <DrawerOverlay />
         <DrawerContent bgColor="teal">
           <DrawerCloseButton />
-          <DrawerHeader>Available Queries</DrawerHeader>
+          <DrawerHeader>所有表</DrawerHeader>
 
           <DrawerBody>
             <Stack direction="column" spacing={4}>

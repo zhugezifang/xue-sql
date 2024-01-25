@@ -42,10 +42,10 @@ const EditorBottomControls = ({
         onClick={SubmitQuery}
         aria-label="Run Query"
       >
-        Run Query
+        执行
       </Button>
       <Button colorScheme="gray" onClick={ClearQuery} aria-label="Clear">
-        Clear
+        清空
       </Button>
     </Stack>
   );

@@ -36,7 +36,7 @@ function QueryHistory({ history, setQuery, setValue, setHistory }) {
     >
       <HStack justifyContent={"space-between"}>
         <Heading fontSize={"2xl"} m={2}>
-          Queries History
+          查询历史
         </Heading>
         <IconButton
           icon={<MdDelete />}

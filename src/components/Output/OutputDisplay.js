@@ -90,7 +90,7 @@ const OutputDisplay = ({ submittedQuery, loading, setLoading }) => {
             justifyContent={"space-between"}
           >
             <Heading textAlign="center" fontSize={"3xl"}>
-              Query Output
+              输出
             </Heading>
             <Spacer />
 
@@ -100,10 +100,10 @@ const OutputDisplay = ({ submittedQuery, loading, setLoading }) => {
               direction={["column-reverse", "row"]}
             >
               <Button colorScheme="blue" mr={2} cursor={"initial"} size={"xs"}>
-                Rows Affected: {rowsAffected}
+                总行数: {rowsAffected}
               </Button>
               <Button colorScheme="blue" mr={2} cursor={"initial"} size={"xs"}>
-                Query took: {queryTime}
+                耗时: {queryTime}
               </Button>
               <Flex justify={"space-between"} py={[2, 0]}>
                 <CsvDownload data={results} filename={`${filename}.csv`}>
@@ -112,7 +112,7 @@ const OutputDisplay = ({ submittedQuery, loading, setLoading }) => {
                     colorScheme="blue"
                     size={["sm", "md"]}
                   >
-                    Export CSV
+                    导出CSV
                   </Button>
                 </CsvDownload>
                 <Button
@@ -122,7 +122,7 @@ const OutputDisplay = ({ submittedQuery, loading, setLoading }) => {
                   colorScheme="blue"
                   size={["sm", "md"]}
                 >
-                  Export JSON
+                  导出JSON
                 </Button>
               </Flex>
             </Flex>

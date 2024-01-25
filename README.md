@@ -42,7 +42,7 @@
     <a href="https://github.com/janvi01/sql-editor/issues/new/choose" target="_blank">Request Feature</a>
 </p>
 
-**SQL Online Editor** aims to provide users with a seamless and user-friendly platform for executing SQL queries, displaying query results in a table, maintaining a query history log, and supporting the export of results in CSV formats. The application will also provide a list of themes to change the editor UI and available tables in the sidebar for easy reference.
+**SQL Online Editor** aims to provide users with a seamless and user-friendly platform for executing SQL queries, displaying query results in a table, maintaining a query history log, and supporting the export of results in CSV formats. The application will also provide a list of themes to change the editor UI and 所有表 in the sidebar for easy reference.
 
 ### Live : [https://sql-editor-online.vercel.app/](https://sql-editor-online.vercel.app/)
 
@@ -60,7 +60,7 @@
 
 - **Export Data**: Users will have the option to download query results in CSV format.
 
-- **List of Available Tables**: The application's sidebar will display a list of available tables in the connected database.
+- **List of 所有表**: The application's sidebar will display a list of 所有表 in the connected database.
 
 - **Change Editor Theme and Size**: The user can change the theme of the Editor by selecting the option from the dropdown and expanding or shrinking the editor size.
 
@@ -80,7 +80,7 @@ project.
 
 ![Query History](./src/assets/screenshots/editor1.png)
 
-![Available tables](./src/assets/screenshots/editor2.png)
+![所有表](./src/assets/screenshots/editor2.png)
 
 ![Changed Theme](./src/assets/screenshots/editor3.png)
 
