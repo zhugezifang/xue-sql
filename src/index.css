@@ -15,3 +15,12 @@ code {
 h2{
   color:#fff;
 }
+
+table {
+  border-collapse: collapse; /* 合并相邻边框 */
+}
+
+th, td {
+  border: 1px solid black; /* 设置边框样式 */
+  padding: 8px; /* 设置单元格内边距 */
+}
