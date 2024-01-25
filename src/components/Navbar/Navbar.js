@@ -18,7 +18,7 @@ function Navbar({ usePredefinedQuery, setValue }) {
         displayText={false}
         setValue={setValue}
       />
-      <Heading> SQL自学网</Heading>
+      <Heading>SQL自学网</Heading>
       <IconButton
         as={"a"}
         href="https://www.zgzf.online"
