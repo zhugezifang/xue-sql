@@ -14,27 +14,17 @@ function Footer() {
       justify={"center"}
     >
       <Text fontSize="16">
-        SQL Online Editor - Copyright © {currentYear} | Created by{" "}
+        SQL自学网 - Copyright © {currentYear} | Created by{" "}
         <Button
           as={"a"}
-          href="https://github.com/janvi01"
+          href="https://zgzf.online/about"
           target="_blank"
-          rightIcon={<BsGithub />}
           colorScheme="blackAlpha"
           fontWeight={"bold"}
           variant="link"
         >
-          janvi01
+          诸葛子房
         </Button>
-      </Text>
-      <Text>
-        | Found an issue? Report it{" "}
-        <Link
-          href="https://github.com/janvi01/sql-editor/issues/new/choose"
-          isExternal
-        >
-          <u>here.</u>
-        </Link>
       </Text>
     </Stack>
   );

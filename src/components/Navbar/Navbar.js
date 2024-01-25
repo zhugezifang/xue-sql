@@ -16,13 +16,12 @@ function Navbar({ usePredefinedQuery, setValue }) {
         displayText={false}
         setValue={setValue}
       />
-      <Heading> SQL Online Editor</Heading>
+      <Heading> SQL自学网</Heading>
       <IconButton
         as={"a"}
-        href="https://github.com/janvi01/sql-editor"
+        href="https://zgzf.online/about"
         target="_blank"
-        aria-label="Github Link"
-        icon={<BsGithub />}
+        aria-label="blog link"
       />
     </HStack>
   );
