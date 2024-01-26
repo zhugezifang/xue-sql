@@ -1,4 +1,4 @@
-import { HStack, Heading, IconButton } from "@chakra-ui/react";
+import { HStack, Heading, Link, Text, Button } from "@chakra-ui/react";
 import React from "react";
 import QueriesDrawer from "../Queries/QueriesDrawer";
 import { VscAccount } from "react-icons/vsc";
@@ -19,13 +19,19 @@ function Navbar({ usePredefinedQuery, setValue }) {
         setValue={setValue}
       />
       <Heading>SQL自学网</Heading>
-      <IconButton
-        as={"a"}
-        href="https://www.zgzf.online"
-        target="_blank"
-        aria-label="about"
-        icon={<VscAccount />}
-      />
+
+      <Text fontSize="16">
+        <Button
+          as={"a"}
+          href="https://zgzf.online/about"
+          target="_blank"
+          colorScheme="blackAlpha"
+          fontWeight={"bold"}
+          variant="link"
+        >
+          关于我
+        </Button>
+      </Text>
     </HStack>
   );
 }
