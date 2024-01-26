@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import OutputTable from "./OutputTable";
+import SQLiteManager from './SQLiteManager';
+
 import {
   Button,
   Heading,
@@ -32,6 +34,10 @@ const OutputDisplay = ({ submittedQuery, loading, setLoading }) => {
     let endTime = performance.now();
     setQueryTime((endTime - startTime).toFixed(2) + " ms");
 
+    SQLiteManager.exec("CREATE TABLE IF NOT EXISTS test (id INTEGER, name VARCHAR(255))");
+  
+    SQLiteManager.run("INSERT INTO test VALUES (?, ?)", [1, 'Example']);
+
     // Show toast when query runs successfully
     if (submittedQuery !== "") {
       toast({
@@ -48,11 +54,17 @@ const OutputDisplay = ({ submittedQuery, loading, setLoading }) => {
 
   const selectResults = () => {
     console.log("submittedQuery:"+submittedQuery);
+    
+
     if (submittedQuery === "") {
       setResults([]);
       setRowsAffected(0);
       return;
     }
+
+    const queryResult = SQLiteManager.run("SELECT * FROM test");
+    console.log(queryResult);
+
     const queryIndex = queryMap.findIndex((o) => o.query === submittedQuery);
     if (queryIndex === -1) {
       setResults([]);
@@ -63,6 +75,7 @@ const OutputDisplay = ({ submittedQuery, loading, setLoading }) => {
         setFilename(queryMap[queryIndex].tableQuery);
         setRowsAffected(queryData.length);
     }
+
   };
 
   if (loading) {
