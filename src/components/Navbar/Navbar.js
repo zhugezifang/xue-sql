@@ -25,6 +25,7 @@ function Navbar({ usePredefinedQuery, setValue }) {
           as={"a"}
           href="https://zgzf.online/about"
           target="_blank"
+          color="white"
           colorScheme="blackAlpha"
           fontWeight={"bold"}
           variant="link"
