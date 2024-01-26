@@ -35,8 +35,8 @@ const OutputDisplay = ({ submittedQuery, loading, setLoading }) => {
     // Show toast when query runs successfully
     if (submittedQuery !== "") {
       toast({
-        title: "Query Run Successfully",
-        description: "Your query has been executed successfully.",
+        title: "执行查询成功",
+        description: "执行查询成功",
         status: "success",
         duration: 2000,
         isClosable: true,
@@ -47,6 +47,7 @@ const OutputDisplay = ({ submittedQuery, loading, setLoading }) => {
   }, [submittedQuery]);
 
   const selectResults = () => {
+    console.log("submittedQuery:"+submittedQuery);
     if (submittedQuery === "") {
       setResults([]);
       setRowsAffected(0);
